@@ -24,11 +24,7 @@ The skill defaults to keeping everything private — log visibility, environment
 
 ## Install
 
-Paste this URL into your agent and tell it to install the skill:
-
-```
-https://github.com/Layr-Labs/skill.md
-```
+Install this skill: `https://github.com/Layr-Labs/skill.md`
 
 Works with Claude Code, Codex, OpenClaw, and any agent that supports the [Agent Skills](https://github.com/openai/skills) open standard.
 
