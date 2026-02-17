@@ -24,54 +24,13 @@ The skill defaults to keeping everything private — log visibility, environment
 
 ## Install
 
-Skills follow the [Agent Skills](https://github.com/openai/skills) open standard. A skill is a folder with a `SKILL.md` file, optional `references/` for supporting docs, and optional `scripts/` for tooling. All three major agent platforms support this format.
+Paste this URL into your agent and tell it to install the skill:
 
-### Claude Code
-
-Copy the skill folder into your Claude Code skills directory:
-
-```bash
-cp -r ecloud/ ~/.claude/skills/ecloud/
+```
+https://github.com/Layr-Labs/skill.md
 ```
 
-The skill appears automatically. Invoke with `/ecloud` or let Claude pick it up implicitly when you mention deploying to EigenCompute, TEEs, or ecloud.
-
-**Project-level** (scoped to a repo):
-```bash
-cp -r ecloud/ .claude/skills/ecloud/
-```
-
-### Codex
-
-Copy into any of the Codex skill discovery paths:
-
-```bash
-# User-level (available across all projects)
-cp -r ecloud/ ~/.agents/skills/ecloud/
-
-# Repo-level (scoped to this project)
-cp -r ecloud/ .agents/skills/ecloud/
-```
-
-Restart Codex to pick up the skill. Invoke with `$ecloud` or let Codex match it implicitly from your prompt.
-
-### OpenClaw
-
-Copy into your OpenClaw skills directory:
-
-```bash
-# User-level (available to all agents)
-cp -r ecloud/ ~/.openclaw/skills/ecloud/
-
-# Workspace-level (scoped to current workspace)
-cp -r ecloud/ skills/ecloud/
-```
-
-OpenClaw loads it on the next session. Workspace skills take precedence over user-level skills.
-
-### Any other agent
-
-The skill is just markdown files. Point your agent at `ecloud/SKILL.md` and it will know what to do. The `references/` folder has the CLI command reference and architecture docs for deeper context.
+Works with Claude Code, Codex, OpenClaw, and any agent that supports the [Agent Skills](https://github.com/openai/skills) open standard.
 
 ## Skill structure
 
