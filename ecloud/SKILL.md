@@ -1,6 +1,16 @@
 ---
-name: "ecloud"
-description: "Deploy and manage verifiable applications on EigenCompute (EigenCloud). Use when the user wants to create, deploy, operate, or manage TEE apps running in Trusted Execution Environments, handle billing/Stripe subscriptions, or build autonomous onchain applications with hardware-isolated wallets."
+name: ecloud
+description: >
+  Deploy and manage verifiable applications on EigenCompute (EigenCloud).
+  Use when the user wants to create, deploy, operate, or manage TEE apps
+  running in Trusted Execution Environments, handle billing/Stripe subscriptions,
+  or build autonomous onchain applications with hardware-isolated wallets.
+  Trigger with "deploy TEE", "ecloud", "EigenCompute", "eigencloud",
+  "trusted execution", "verifiable app", or "TEE wallet".
+allowed-tools: Read, Bash
+version: 1.0.0
+author: Layr-Labs
+license: MIT
 ---
 
 # EigenCloud (Ecloud) Skill
